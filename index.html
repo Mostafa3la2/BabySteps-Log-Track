@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabySteps: Log & Track</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #F9F5FF;
+            color: #16162A;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 48px 24px;
+            text-align: center;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #7C4DBA, #9B6DD7);
+            border-radius: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(124, 77, 186, 0.25);
+        }
+        .app-icon svg {
+            width: 60px;
+            height: 60px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #16162A;
+            margin-bottom: 12px;
+        }
+        h1 span {
+            color: #7C4DBA;
+        }
+        .tagline {
+            font-size: 18px;
+            color: #55556E;
+            margin-bottom: 40px;
+        }
+        .features {
+            text-align: left;
+            max-width: 480px;
+            margin: 0 auto 40px;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+        .feature-icon.lavender { background-color: #F0EAFC; }
+        .feature-icon.blue { background-color: #E8F0FA; }
+        .feature-icon.mint { background-color: #E6F5EE; }
+        .feature-icon.peach { background-color: #FFF0EC; }
+        .feature-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #16162A;
+            margin-bottom: 2px;
+        }
+        .feature-desc {
+            font-size: 14px;
+            color: #55556E;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-bottom: 48px;
+        }
+        .app-store-badge img {
+            height: 54px;
+        }
+        .links {
+            padding-top: 24px;
+            border-top: 1px solid #E8E0F0;
+            font-size: 14px;
+            color: #55556E;
+        }
+        .links a {
+            color: #7C4DBA;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 24px;
+            font-size: 14px;
+            color: #55556E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 8C18 8 12 16 12 24C12 32 16 38 20 42C24 46 28 48 30 52C32 48 36 46 40 42C44 38 48 32 48 24C48 16 42 8 30 8Z" fill="white" fill-opacity="0.9"/>
+                <circle cx="24" cy="26" r="3" fill="#7C4DBA"/>
+                <circle cx="36" cy="26" r="3" fill="#7C4DBA"/>
+                <path d="M25 34C25 34 27 37 30 37C33 37 35 34 35 34" stroke="#7C4DBA" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <h1><span>BabySteps</span>: Log & Track</h1>
+        <p class="tagline">A beautiful, fast baby tracking app for exhausted parents.</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon lavender">&#x1F37C;</div>
+                <div>
+                    <p class="feature-title">Log anything in under 3 seconds</p>
+                    <p class="feature-desc">Feeding, sleep, diapers, growth, and medical records — all with one hand.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon blue">&#x1F4CA;</div>
+                <div>
+                    <p class="feature-title">See patterns at a glance</p>
+                    <p class="feature-desc">Beautiful charts and weekly insights help you understand your baby's routine.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon mint">&#x1F91D;</div>
+                <div>
+                    <p class="feature-title">Share with your partner</p>
+                    <p class="feature-desc">Real-time sync via iCloud. Both parents see the same data, always up to date.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon peach">&#x2764;&#xFE0F;</div>
+                <div>
+                    <p class="feature-title">Check in on yourself too</p>
+                    <p class="feature-desc">A gentle daily check-in to help you track how you're feeling as a new parent.</p>
+                </div>
+            </div>
+        </div>
+
+        <a class="app-store-badge" href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 BabySteps: Log & Track. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
